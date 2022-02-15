@@ -12,6 +12,9 @@ public class HybridCar extends Vehicle implements IComponent, ICollection {
         super(color, price, make, model);
         this.component = component;
         this.component2 = component2;
+    }
 
+    public IComponent getComponent() {
+        return this.component;
     }
 }
