@@ -19,4 +19,9 @@ public class Dealership implements ICollection {
     public int getVehiclesNumber() {
         return vehicles.size();
     }
+
+    @Override
+    public double getPrice() {
+        return 0;
+    }
 }

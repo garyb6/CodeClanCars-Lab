@@ -45,4 +45,11 @@ public class CustomerTest {
 
         assertEquals(1, customer.getVehiclesNumber());
     }
+
+    @Test
+    public void canCustomerBuyVehicle(){
+        customer.buyVehicle(van);
+        assertEquals(2, customer.getVehiclesNumber());
+        assertEquals(22500.00, customer.getMoney(), 0.00);
+    }
 }

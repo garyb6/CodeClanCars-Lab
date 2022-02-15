@@ -1,4 +1,5 @@
 import behaviours.ICollection;
+import vehicles.Van;
 
 import java.util.ArrayList;
 
@@ -22,5 +23,10 @@ public class Customer {
 
     public void addVehicle(ICollection vehicle){
         this.vehicles.add(vehicle);
+    }
+
+    public double buyVehicle(ICollection vehicle) {
+        addVehicle(vehicle);
+        return this.money -= vehicle.getPrice();
     }
 }
