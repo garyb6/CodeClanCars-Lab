@@ -1,4 +1,6 @@
 package components;
 
-public class Engine {
+import behaviours.IComponent;
+
+public class Engine implements IComponent {
 }
