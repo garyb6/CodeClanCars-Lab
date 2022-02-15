@@ -1,4 +1,6 @@
 package vehicles;
 
-public class HybridCar {
+import behaviours.IComponent;
+
+public class HybridCar extends Vehicle implements IComponent {
 }
