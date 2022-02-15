@@ -22,7 +22,7 @@ public class CustomerTest {
     public void setUp(){
         engine = new Engine(6, 150);
         tyres = new Tyres(4, "hard");
-        hybridCar = new HybridCar("red", 2000.00, "Renault", "Leaf");
+        hybridCar = new HybridCar("red", 2000.00, "Renault", "Leaf", engine, tyres);
         van = new Van("white", 2500.00, "Toyota", "C-class", engine, tyres);
         customer = new Customer (25000.00);
         customer.addVehicle(hybridCar);
