@@ -10,5 +10,8 @@ public class ElectricCar extends Vehicle implements IComponent, ICollection {
 
     public ElectricCar(String color, double price, String make, String model, IComponent component, IComponent component2) {
         super(color, price, make, model);
+        this.component = component;
+        this.component2 = component2;
+
     }
 }
