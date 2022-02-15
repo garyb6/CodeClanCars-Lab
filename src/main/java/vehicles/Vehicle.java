@@ -3,11 +3,11 @@ package vehicles;
 public abstract class Vehicle {
 
     private String color;
-    private int price;
+    private double price;
     private String make;
     private String model;
 
-    public Vehicle(String color, int price, String make, String model){
+    public Vehicle(String color, double price, String make, String model){
         this.color = color;
         this.price = price;
         this.make = make;
@@ -18,7 +18,7 @@ public abstract class Vehicle {
         return color;
     }
 
-    public int getPrice() {
+    public double getPrice() {
         return price;
     }
 
